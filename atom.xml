@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>FEliuyg的个人博客</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://feliuyg.github.com/"/>
+  <updated>2017-03-20T14:32:12.000Z</updated>
+  <id>https://feliuyg.github.com/</id>
+  
+  <author>
+    <name>FEliuyg</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>历史记录管理之pushState的使用</title>
+    <link href="https://feliuyg.github.com/2017/03/20/pushState/"/>
+    <id>https://feliuyg.github.com/2017/03/20/pushState/</id>
+    <published>2017-03-20T14:26:44.000Z</published>
+    <updated>2017-03-20T14:32:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>使用pushState可以实现浏览器的无刷新，同时向浏览器的历史记录中添加一条记录，可以后退。与ajax结合，实现pjax。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;使用pushState可以实现浏览器的无刷新，同时向浏览器的历史记录中添加一条记录，可以后退。与ajax结合，实现pjax。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="https://feliuyg.github.com/tags/javascript/"/>
+    
+      <category term="前端" scheme="https://feliuyg.github.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+</feed>
