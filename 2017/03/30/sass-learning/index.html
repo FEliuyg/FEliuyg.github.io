@@ -1,28 +1,193 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>FEliuyg的个人博客</title>
-  
-  <link href="/atom.xml" rel="self"/>
-  
-  <link href="https://feliuyg.github.com/"/>
-  <updated>2017-03-30T01:01:22.000Z</updated>
-  <id>https://feliuyg.github.com/</id>
-  
-  <author>
-    <name>FEliuyg</name>
+<!DOCTYPE html>
+<html>
+<head>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>sass的学习</title>
-    <link href="https://feliuyg.github.com/2017/03/30/sass-learning/"/>
-    <id>https://feliuyg.github.com/2017/03/30/sass-learning/</id>
-    <published>2017-03-30T00:53:39.000Z</published>
-    <updated>2017-03-30T01:01:22.000Z</updated>
+
     
-    <content type="html"><![CDATA[<blockquote>
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>sass的学习 | FEliuyg的个人博客 | null</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="用于记录sass的一些常用知识点，便于后期自己的查阅与巩固。  
+
+语法导入导入（@import）scss文件最终编译会被合并成一个css文件，而导入CSS文件则保留以@import方式存在。另外导入scss文件可以省略后缀名，一处文件命名以 _ 开头，导入也可以省略 _。
+1234// a.scssbody &amp;#123;  background: #eee;&amp;#125;
+123456// b.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sass的学习">
+<meta property="og:url" content="https://feliuyg.github.com/2017/03/30/sass-learning/index.html">
+<meta property="og:site_name" content="FEliuyg的个人博客">
+<meta property="og:description" content="用于记录sass的一些常用知识点，便于后期自己的查阅与巩固。  
+
+语法导入导入（@import）scss文件最终编译会被合并成一个css文件，而导入CSS文件则保留以@import方式存在。另外导入scss文件可以省略后缀名，一处文件命名以 _ 开头，导入也可以省略 _。
+1234// a.scssbody &amp;#123;  background: #eee;&amp;#125;
+123456// b.">
+<meta property="og:updated_time" content="2017-03-30T01:01:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="sass的学习">
+<meta name="twitter:description" content="用于记录sass的一些常用知识点，便于后期自己的查阅与巩固。  
+
+语法导入导入（@import）scss文件最终编译会被合并成一个css文件，而导入CSS文件则保留以@import方式存在。另外导入scss文件可以省略后缀名，一处文件命名以 _ 开头，导入也可以省略 _。
+1234// a.scssbody &amp;#123;  background: #eee;&amp;#125;
+123456// b.">
+    
+        <link rel="alternative" href="/atom.xml" title="FEliuyg的个人博客" type="application/atom+xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.4.14">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">FEliuyg</h5>
+          <a href="mailto:15558110117@163.com" title="15558110117@163.com" class="mail">15558110117@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/FEliuyg" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://weibo.com/2828554114/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">sass的学习</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">sass的学习</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-03-30T00:53:39.000Z" itemprop="datePublished" class="page-time">
+  2017-03-30
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#语法"><span class="post-toc-number">1.</span> <span class="post-toc-text">语法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#导入"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">导入</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#注释"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">注释</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#变量"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">变量</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#多值变量"><span class="post-toc-number">1.3.0.1.</span> <span class="post-toc-text">多值变量</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#嵌套"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">嵌套</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#混合（mixin）"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">混合（mixin）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#继承"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">继承</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#函数"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">函数</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-sass-learning"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">sass的学习</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017年03月30日 8:53" datetime="2017-03-30T00:53:39.000Z"  itemprop="datePublished">2017-03-30</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <blockquote>
 <p>用于记录sass的一些常用知识点，便于后期自己的查阅与巩固。  </p>
 </blockquote>
 <h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><h3 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h3><p>导入（<code>@import</code>）scss文件最终编译会被合并成一个css文件，而导入CSS文件则保留以<code>@import</code>方式存在。另外导入scss文件可以省略后缀名，一处文件命名以 <code>_</code> 开头，导入也可以省略 <code>_</code>。</p>
@@ -52,68 +217,288 @@
 <h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//sass style</span></div><div class="line"><span class="selector-tag">h1</span> &#123;</div><div class="line">  <span class="attribute">border</span>: <span class="number">4px</span> solid <span class="number">#ff9aa9</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.speak</span> &#123;</div><div class="line">  @<span class="keyword">extend</span> h1;</div><div class="line">  <span class="attribute">border-width</span>: <span class="number">2px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//css style</span></div><div class="line"><span class="selector-tag">h1</span>,<span class="selector-class">.speak</span> &#123;</div><div class="line">  <span class="attribute">border</span>: <span class="number">4px</span> solid <span class="number">#ff9aa9</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.speaker</span> &#123;</div><div class="line">  <span class="attribute">border-width</span>: <span class="number">2px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>使用最多的是颜色函数， <code>lighten($color, $amount)</code>减淡和<code>darken($color, $amount)</code> , <code>$amount</code>为百分比。</p>
 <figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// sass style</span></div><div class="line"><span class="variable">$baseFontSize</span>: <span class="number">10px</span>!default;</div><div class="line"><span class="variable">$gay</span>: <span class="number">#ccc</span>!default;</div><div class="line"></div><div class="line">@function pxToRem(<span class="variable">$px</span>) &#123;</div><div class="line">  @return <span class="variable">$px</span> / <span class="variable">$baseFontSize</span> * 1rem;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">font-size</span>: <span class="variable">$baseFontSize</span>;</div><div class="line">  <span class="attribute">color</span>: lighten(<span class="variable">$gray</span>, <span class="number">10%</span>);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.test</span> &#123;</div><div class="line">  <span class="attribute">font-size</span>: pxToRem(<span class="number">16px</span>);</div><div class="line">  <span class="attribute">color</span>: darken(<span class="variable">$gray</span>, <span class="number">10%</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// css style</span></div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">10px</span>;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#e6e6e6</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.test</span> &#123;</div><div class="line">  <span class="attribute">font-size</span>: <span class="number">1.6rem</span>;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#b3b3b3</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;用于记录sass的一些常用知识点，便于后期自己的查阅与巩固。  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h2&gt;&lt;h3 id
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>历史记录管理之pushState的使用</title>
-    <link href="https://feliuyg.github.com/2017/03/20/pushState/"/>
-    <id>https://feliuyg.github.com/2017/03/20/pushState/</id>
-    <published>2017-03-20T14:26:44.000Z</published>
-    <updated>2017-03-21T02:01:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p><code>ajax</code>可以实现页面的无刷新，但是也带来另外一个问题，就是无法后退。这个时候<code>pushState</code>就派上用场了，也是无刷新的。它的作用就是，往浏览器的历史记录里塞一个地址与状态，这个时候就可以实现无刷新并且可以前进后退。与<code>ajax</code>的结合使用，就是俗称的<code>pjax</code>。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-03-30T01:01:22.000Z" itemprop="dateUpdated">2017年3月30日 9:01</time>
+</span><br>
+
+
+        这里写留言或版权声明：<a href="/2017/03/30/sass-learning/" target="_blank" rel="external">https://feliuyg.github.com/2017/03/30/sass-learning/</a>
+    </div>
+    <footer>
+        <a href="https://feliuyg.github.com">
+            <img src="/img/avatar.jpg" alt="FEliuyg">
+            FEliuyg
+        </a>
+    </footer>
 </blockquote>
-<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><ul>
-<li>history.pushState<br>向浏览器的历史记录中添加一个状态</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">history.pushState(state, title, url)</div></pre></td></tr></table></figure>
-<p>  参数详解：<br>  <em>state</em>  object  – 状态对象，与历史记录相关。当用户定向到一个新的状态时（一般就是浏览器的前进与后退），会触发<code>popstate</code>事件。事件的state属性包含了历史记录的state对象。<br>  <em>title</em>  – 火狐浏览器忽略此参数，但考虑到将来有可能改变，传递一个空字符串是安全的做法。<br>  <em>url</em>  – 这个参数提供了新历史记录的地址。但浏览器在调用<code>pushState</code>方法之后不会去加载这个url。如果它是一个相对地址，那一定是相对于当前的url，新的url必须和当前的url在同一源下，否则会抛出异常。  </p>
-<p>  注意：url中带 <code>&#39;#&#39;</code>或<code>&#39;?&#39;</code> 并不会触发<code>onhashchange</code>事件</p>
-<ul>
-<li>history.replaceState<br>替换浏览器历史记录的当前记录。</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">history.replace(state, title, url)</div></pre></td></tr></table></figure>
-<ul>
-<li>window.onpopstate<br>监听历史记录状态的变化。<code>pushState</code>和<code>replaceState</code>本身不会触发该事件</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.onpopstate = <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(event.state);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="API的简单运用"><a href="#API的简单运用" class="headerlink" title="API的简单运用"></a>API的简单运用</h3><ul>
-<li>pushState  </li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  history.pushState(&#123;<span class="string">'page'</span>: <span class="number">1</span>&#125;, <span class="string">''</span>, <span class="string">'#page1'</span>)  <span class="comment">// 打开新的页面可以发现,浏览器的左上方出现了可以返回的按钮</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li>replaceState  </li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  history.replaceState(&#123;<span class="string">'page'</span>: <span class="number">2</span>&#125;, <span class="string">''</span>, <span class="string">'#page2'</span>)  <span class="comment">// 打开新的页面可以发现,浏览器的左上方按钮还是灰的，但是地址栏上增加了一个hash值page2</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="完整实例–猜数字游戏-（来自《JavaSript权威指南》）"><a href="#完整实例–猜数字游戏-（来自《JavaSript权威指南》）" class="headerlink" title="完整实例–猜数字游戏 （来自《JavaSript权威指南》）"></a>完整实例–猜数字游戏 （来自《JavaSript权威指南》）</h3><p><a href="/demo/guessNumber.html">demo地址</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">  &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</div><div class="line">  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</div><div class="line">  &lt;title&gt;pushstate&lt;/title&gt;</div><div class="line">  &lt;style&gt;</div><div class="line">    #prompt &#123;</div><div class="line">      font-size: 16px;</div><div class="line">    &#125;</div><div class="line">    table &#123;</div><div class="line">      width: 90%;</div><div class="line">      margin: 10px;</div><div class="line">      margin-left: 5%;</div><div class="line">    &#125;</div><div class="line">    #low, #high &#123;</div><div class="line">      background-color: lightgray;</div><div class="line">      height: 1em;</div><div class="line">    &#125;</div><div class="line">    #mid &#123;</div><div class="line">      background-color: green;</div><div class="line">    &#125;</div><div class="line">  &lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">  &lt;h1 id=&quot;heading&quot;&gt;I&apos;m thinking of a number ...&lt;/h1&gt;</div><div class="line">  &lt;table&gt;</div><div class="line">    &lt;tr&gt;</div><div class="line">      &lt;td id=&quot;low&quot;&gt;&lt;/td&gt;</div><div class="line">      &lt;td id=&quot;mid&quot;&gt;&lt;/td&gt;</div><div class="line">      &lt;td id=&quot;high&quot;&gt;&lt;/td&gt;</div><div class="line">    &lt;/tr&gt;</div><div class="line">  &lt;/table&gt;</div><div class="line"></div><div class="line">  &lt;label id=&quot;prompt&quot;&gt;&lt;/label&gt;</div><div class="line">  &lt;input type=&quot;text&quot; id=&quot;input&quot;&gt;</div><div class="line"></div><div class="line">  &lt;script&gt;</div><div class="line"></div><div class="line">    window.onload = newgame</div><div class="line">    window.onpopstate = popState</div><div class="line">    var state,ui</div><div class="line"></div><div class="line">    function newgame (playagain) &#123;</div><div class="line">      ui = &#123;</div><div class="line">        heading: null,</div><div class="line">        prompt: null,</div><div class="line">        input: null,</div><div class="line">        low: null,</div><div class="line">        mid: null,</div><div class="line">        high: null</div><div class="line">      &#125;</div><div class="line"></div><div class="line">      for (var id in ui) &#123;</div><div class="line">        ui[id] = document.getElementById(id)</div><div class="line">      &#125;</div><div class="line"></div><div class="line">      ui.input.onchange = handleGuess</div><div class="line"></div><div class="line">      state = &#123;</div><div class="line">        n: Math.floor(99 * Math.random() + 1),</div><div class="line">        low: 0,</div><div class="line">        high: 100,</div><div class="line">        guessnum: 0,</div><div class="line">        guess: undefined</div><div class="line">      &#125;</div><div class="line"></div><div class="line">      display(state)</div><div class="line"></div><div class="line">      if (playagain === true) &#123;</div><div class="line">        save(state)</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    function handleGuess () &#123;</div><div class="line">      var g = parseInt(this.value)</div><div class="line">      if ((g &gt; state.low) &amp;&amp; (g &lt; state.high)) &#123;</div><div class="line">        if (g &lt; state.n) &#123;</div><div class="line">          state.low = g</div><div class="line">        &#125; else if (g &gt; state.n) &#123;</div><div class="line">          state.high = g</div><div class="line">        &#125;</div><div class="line">        state.guess = g</div><div class="line">        state.guessnum++</div><div class="line">        save(state)</div><div class="line">        display(state)</div><div class="line">      &#125; else &#123;</div><div class="line">        alert(&quot;Please enter a number greater than &quot; + state.low + &quot; and less than &quot; + state.high)</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    function display (state) &#123;</div><div class="line">      ui.heading.innerHTML = document.title = &quot;I&apos;m thinking of a number between &quot; + state.low + &quot; and &quot; + state.high + &quot;.&quot;</div><div class="line"></div><div class="line">      ui.low.style.width = state.low + &quot;%&quot;</div><div class="line">      ui.mid.style.width = (state.high - state.low) + &quot;%&quot;</div><div class="line">      ui.high.style.width = (100 - state.high) + &quot;%&quot;</div><div class="line"></div><div class="line">      ui.input.style.visibility = &quot;visible&quot;</div><div class="line">      ui.input.value = &quot;&quot;</div><div class="line">      ui.input.focus()</div><div class="line"></div><div class="line">      if (state.guess === undefined) &#123;</div><div class="line">        ui.prompt.innerHTML = &quot;Type your guess and hit Enter:&quot;</div><div class="line">      &#125; else if (state.guess &lt; state.n) &#123;</div><div class="line">        ui.prompt.innerHTML = state.guess + &quot; is too low. Guess again:&quot;</div><div class="line">      &#125; else if (state.guess &gt; state.n) &#123;</div><div class="line">        ui.prompt.innerHTML = state.guess + &quot; is too high. Guess again:&quot;</div><div class="line">      &#125; else &#123;</div><div class="line">        ui.input.style.visibility = &quot;hidden&quot;</div><div class="line">        ui.heading.innerHTML = document.title = state.guess + &quot; is correct!&quot;</div><div class="line">        ui.prompt.innerHTML = &quot;You win! &lt;button onclick=&apos;newgame(true)&apos;&gt;Play Again&lt;/button&gt;&quot;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    function save (state) &#123;</div><div class="line">      if (!history.pushState) return</div><div class="line"></div><div class="line">      var url = &quot;?guess=&quot; + state.guessnum</div><div class="line"></div><div class="line">      history.pushState(state, &quot;&quot;, url)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    function popState (event) &#123;</div><div class="line">      if (event.state) &#123;</div><div class="line">        state = event.state</div><div class="line">        display(state)</div><div class="line">      &#125; else &#123;</div><div class="line">        history.replaceState(state, &quot;&quot;, &quot;#guess&quot; + state.guessnum)</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-]]></content>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
     
-    <summary type="html">
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://feliuyg.github.com/2017/03/30/sass-learning/&title=《sass的学习》 — FEliuyg的个人博客&pic=https://feliuyg.github.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://feliuyg.github.com/2017/03/30/sass-learning/&title=《sass的学习》 — FEliuyg的个人博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://feliuyg.github.com/2017/03/30/sass-learning/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《sass的学习》 — FEliuyg的个人博客&url=https://feliuyg.github.com/2017/03/30/sass-learning/&via=https://feliuyg.github.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://feliuyg.github.com/2017/03/30/sass-learning/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
     
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;ajax&lt;/code&gt;可以实现页面的无刷新，但是也带来另外一个问题，就是无法后退。这个时候&lt;code&gt;pushState&lt;/code&gt;就派上用场了，也是无刷新的。它的作用就是，往浏览器的历史记录里塞一个地址与状态，这个时候就可以实现无刷
-    
-    </summary>
-    
-    
-      <category term="javascript" scheme="https://feliuyg.github.com/tags/javascript/"/>
-    
-      <category term="前端" scheme="https://feliuyg.github.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
-</feed>
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/03/20/pushState/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">历史记录管理之pushState的使用</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+<div class="comments" id="comments">
+    <div class="ds-thread" data-thread-key="sass-learning" data-title="sass的学习" data-url="https://feliuyg.github.com/2017/03/30/sass-learning/"></div>
+</div>
+<script>
+lazyScripts.push('//cdn.bootcss.com/marked/0.3.6/marked.min.js');
+
+var duoshuoQuery = {short_name:'ysblog', theme: 'none'};
+lazyScripts.push('/js/embed.min.js?v=1.4.14');
+
+
+</script>
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            <span>博客内容遵循 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>FEliuyg的个人博客 &copy; 2015 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://feliuyg.github.com/2017/03/30/sass-learning/&title=《sass的学习》 — FEliuyg的个人博客&pic=https://feliuyg.github.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://feliuyg.github.com/2017/03/30/sass-learning/&title=《sass的学习》 — FEliuyg的个人博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://feliuyg.github.com/2017/03/30/sass-learning/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《sass的学习》 — FEliuyg的个人博客&url=https://feliuyg.github.com/2017/03/30/sass-learning/&via=https://feliuyg.github.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://feliuyg.github.com/2017/03/30/sass-learning/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACIUlEQVR42u3aQY7DMAgF0N7/0pkDVEk+0EgT+3k1GqW1XxYUDJ9PvI6v9f3/s+d7u3yeWBgYGK9lHJfrbINky/z5ZN+zZzAwMPZhJIfI497Zp3qM610wMDAwkgNVg+n1cTEwMDDmjEn62EtAMTAwMCYB8RqWbJ/s9eNaHAMD44WMSWn69N+P9DcwMDBexTiKq9okyIPjMVgYGBhrM/IAl6dovRbChI2BgbE2IzlKbwCiV9Y2Xw0GBsZmjGoxOWkM5EnhzV4YGBibMXptgMnhyq1KDAyMLRm9r+tdzOXFavJZDAyMfRi9oDm5XIvCaF4MY2BgLM3IR7uq6V1evlYv2m5eBwYGxtKM3n17kvY1O6vB6BgGBsYOjEnZef0+ekVv9RvKh8PAwHghI//wvAH54LAFBgbG0oxeGO1tVh2qKLxQDAyMpRnVMrJ3rdZL+Mq/FRgYGIsyqmMQ83I3TxwLg2IYGBhLM/KAmwfEXqI5L3QxMDDWZuSDFAmmWsrm7dKbYQsMDIzNGJNksdp0zMvmm7CLgYGxDWPSvOwhq5drUcDFwMBYiHEUVxXQeyZJQ6PcFgMDYwlGr8FZveivHiUvX5tTbxgYGC9k5EE25+XP9Erf8pvGwMBYglENfJP0cTIEdpPnYmBgYAwGtqqfKlMxMDAwBtdt1WPlLYof/25gYGD8e8ZzqV71Yi5vDGBgYOzD6N1lVbeZHOJnjUwMDIz3Mf4AoXWJhwV1s8QAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.4.14"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.4.14" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
