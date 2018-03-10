@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>喝水加一物，排出体内10年垃圾、漂亮又健康！</title>
   <style>
     * {
       margin: 0;
@@ -20,18 +20,35 @@
     .container img {
       width: 100%;
     }
+    .detail {
+      position: absolute;
+      width: 30%;
+      top: 160px;
+      left: 50%;
+      transform: translate(-50%);
+      animation: 0.8s scale ease-in-out infinite alternate;
+    }
     @media screen and (min-width: 1024px) {
       .container {
         width: 740px;
         margin: 0 auto;
       }
     }
+    @keyframes scale {
+      0% {
+        transform: translate(-50%) scale(1);
+      }
+      100% {
+        transform: translate(-50%) scale(1.2);
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <a href="https://mp.weixin.qq.com/s?src=3&timestamp=1520424951&ver=1&signature=lmxM2Ijw-bpi*Kxsne4ZtQjPIDJd5BrkKg*5hL0GM*xZowsLZsetLPdfSFyPg3i54zxDCw9Y1yMX3kJWRWncEfdj7pU*lz9hSl6D9FzcIKrsBFSznEiwSc4y-O-Y*tAM-6BOdF2PfJJ-V-SQYJubRmVCd7WuU*xuVw9aesBB6Zc=">
-      <img src="/img/ad.jpeg" />
+    <img src="/img/ad.jpg" />
+    <a href="/ad/1.html" class="detail">
+      <img src="/img/ad_detail.png" alt="">
     </a>
   </div>
 </body>
